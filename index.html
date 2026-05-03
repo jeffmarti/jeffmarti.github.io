@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeff's Hydrology & Water Rights Apps</title>
+    <meta name="description" content="A collection of interactive hydrology tools for Washington State, including snowpack projections, streamflow forecasts, and water right geocoders.">
+    <meta name="keywords" content="Hydrology, Washington State, SNOTEL, SNODAS, Water Rights, USGS, Streamflow, Yakima Basin">
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 2rem; background-color: #f4f7f9; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        .app-card { background: white; padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .app-title { font-size: 1.25rem; font-weight: bold; color: #2980b9; margin-bottom: 0.5rem; display: block; text-decoration: none; }
+        .app-title:hover { text-decoration: underline; }
+        .tag { background: #e1ecf4; color: #39739d; padding: 2px 8px; border-radius: 4px; font-size: 0.85rem; font-weight: 500; }
+        .meta-info { font-size: 0.9rem; color: #666; margin-top: 10px; }
+        .btn { display: inline-block; background: #3498db; color: white; padding: 8px 16px; border-radius: 4px; text-decoration: none; margin-top: 10px; font-weight: bold; }
+        .btn:hover { background: #2980b9; }
+    </style>
+</head>
+<body>
+
+    <h1>Hydrology & Water Rights Applications</h1>
+    <p>Interactive data visualization tools for water resource management, focusing on Washington State and the US West.</p>
+
+    <!-- App: Snowpack Rebound -->
+    <div class="app-card">
+        <a href="https://waterwater.shinyapps.io/sweRebound/" class="app-title">Will a late-bloomer snowpack save the day?</a>
+        <p>Insight into the historic probability of snowpack rebounds—years where snowpack lags early but reaches normal levels by late winter.</p>
+        <div class="meta-info">
+            <span class="tag">Source: NRCS SNOTEL</span> | <span class="tag">Domain: US West</span>
+        </div>
+        <a href="https://waterwater.shinyapps.io/sweRebound/" class="btn">Launch App</a>
+    </div>
+
+    <!-- App: Snowpack Projections -->
+    <div class="app-card">
+        <a href="https://waterwater.shinyapps.io/WAbasinSWEprojections/" class="app-title">What if? Snowpack Projections</a>
+        <p>Facilitates 'what-if?' analysis of snowpack accumulation between today and future dates using basin-wide averages.</p>
+        <div class="meta-info">
+            <span class="tag">Source: NRCS SNOTEL</span> | <span class="tag">Domain: US West</span>
+        </div>
+        <a href="https://waterwater.shinyapps.io/WAbasinSWEprojections/" class="btn">Launch App</a>
+    </div>
+
+    <!-- App: Snowball's Chance -->
+    <div class="app-card">
+        <a href="https://waterwater.shinyapps.io/swe-probability/" class="app-title">Snowball's Chance: Historic SWE Achievement Probability</a>
+        <p>Estimates the probability that a basin's snowpack will meet or exceed the 1991–2020 median SWE at a chosen future date.</p>
+        <div class="meta-info">
+            <span class="tag">Source: NRCS SNOTEL</span> | <span class="tag">Domain: US West</span>
+        </div>
+        <a href="https://waterwater.shinyapps.io/swe-probability/" class="btn">Launch App</a>
+    </div>
+
+    <!-- App: SNODAS HUC8 -->
+    <div class="app-card">
+        <a href="https://waterwater.shinyapps.io/snodas-huc8" class="app-title">Watershed level snow water volumes in Washington State</a>
+        <p>Displays daily gridded SWE estimates expressed as acre-feet for 71 HUC8 watersheds in Washington State.</p>
+        <div class="meta-info">
+            <span class="tag">Source: NOHRSC SNODAS</span> | <span class="tag">Domain: Washington State</span>
+        </div>
+        <a href="https://waterwater.shinyapps.io/snodas-huc8" class="btn">Launch App</a>
+    </div>
+
+    <!-- App: Yakima Dashboard -->
+    <div class="app-card">
+        <a href="https://waterwater.shinyapps.io/yakima-storage/" class="app-title">Yakima Basin Water Dashboard</a>
+        <p>Combines daily reservoir storage from USBR Hydromet with SNODAS basin snowpack estimates for natural and constructed storage analysis.</p>
+        <div class="meta-info">
+            <span class="tag">Source: USBR, NOHRSC, NOAA</span> | <span class="tag">Domain: Yakima Basin</span>
+        </div>
+        <a href="https://waterwater.shinyapps.io/yakima-storage/" class="btn">Launch App</a>
+    </div>
+
+    <!-- App: Runoff Forecasts -->
+    <div class="app-card">
+        <a href="https://waterwater.shinyapps.io/RunoffForecast" class="app-title">Monthly Runoff Forecasts — Washington State Watersheds</a>
+        <p>Consolidated monthly streamflow forecasts from ~127 stations across Washington State WRIAs.</p>
+        <div class="meta-info">
+            <span class="tag">Source: NWRFC</span> | <span class="tag">Domain: Washington State</span>
+        </div>
+        <a href="https://waterwater.shinyapps.io/RunoffForecast" class="btn">Launch App</a>
+    </div>
+
+    <!-- App: Instream Flow -->
+    <div class="app-card">
+        <a href="https://waterwater.shinyapps.io/IRPPforecast/" class="app-title">Ensemble Instream Flow Forecasts vs WAC Regulations</a>
+        <p>Compares ensemble seasonal runoff forecasts to regulatory flows adopted by the WA Dept of Ecology.</p>
+        <div class="meta-info">
+            <span class="tag">Source: NWRFC, WA Dept of Ecology</span> | <span class="tag">Domain: Washington State</span>
+        </div>
+        <a href="https://waterwater.shinyapps.io/IRPPforecast/" class="btn">Launch App</a>
+    </div>
+
+    <!-- App: Water Right Geocoder -->
+    <div class="app-card">
+        <a href="https://waterwater.shinyapps.io/wr-geocode/" class="app-title">Water Right PLSS Geocoder</a>
+        <p>Converts WA Ecology water right records (WRTS) into Google Earth KMZ files using PLSS descriptions.</p>
+        <div class="meta-info">
+            <span class="tag">Source: WA Ecology, BLM</span> | <span class="tag">Domain: Washington State</span>
+        </div>
+        <a href="https://waterwater.shinyapps.io/wr-geocode/" class="btn">Launch App</a>
+    </div>
+
+    <!-- App: Map Builder -->
+    <div class="app-card">
+        <a href="https://waterwater.shinyapps.io/appmap" class="app-title">Water Right Map Builder</a>
+        <p>Create maps of spatial water right attributes and export to GIS formats like KML or GPKG.</p>
+        <div class="meta-info">
+            <span class="tag">Source: WA GIS, BLM</span> | <span class="tag">Domain: Washington State</span>
+        </div>
+        <a href="https://waterwater.shinyapps.io/appmap" class="btn">Launch App</a>
+    </div>
+
+    <hr>
+    <h3>Google Earth Engine Tools</h3>
+    <ul>
+        <li><a href="https://jeffjmarti.users.earthengine.app/view/washingtonetexplorer">Washington ET Explorer</a></li>
+        <li><a href="https://jeffjmarti.users.earthengine.app/view/washington-irrigation-checker">Washington Irrigation Checker</a></li>
+    </ul>
+
+</body>
+</html>
